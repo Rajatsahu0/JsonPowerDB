@@ -1,0 +1,183 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "bac43afb-dc13-4c17-85b1-26a56ffc6669",
+        "name": "JPDB"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Service",
+            "id": "66f97c07-cfcd-4a26-b511-5afe612fb76c",
+            "name": "CRUD"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90937678|-31949296578900517|90942251\",\n    \"dbName\": \"Student\",\n    \"cmd\": \"GET_BY_KEY\",\n    \"rel\": \"Student-Rel\",\n    \"createTime\": true,\n    \"updateTime\": true,\n    \"jsonStr\": {\n        \"name\": \"Soniya\"\n    }\n\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/irl"
+                },
+                "id": "e12e5b1a-f5a1-4aec-9c34-9f7edd484551",
+                "name": "GET",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90937678|-31949296578900517|90942251\",\n    \"cmd\": \"PUT\",\n    \"dbName\": \"Student\",\n    \"rel\": \"Student-Rel\",\n    \"jsonStr\": {\n        \"id\": \"2\",\n        \"name\": \"Sanjay\",\n        \"email\": \"sanjay@gmail.com\",\n      \t\n    }\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "c41fd0c5-dfaa-4ae4-b0d5-eedf057e136b",
+                "name": "PUT",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90937678|-31949296578900517|90942251\",\n    \"cmd\": \"REMOVE\",\n    \"dbName\": \"Student\",\n    \"rel\": \"Student-Rel\",\n    \"record\" : 1\n    \n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "5c22366f-a98e-4732-b416-3f628dd5d670",
+                "name": "REMOVE",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90937678|-31949296578900517|90942251\",\n    \"cmd\": \"PUT\",\n    \"dbName\": \"Student\",\n    \"rel\": \"Student-Rel\",\n    \"jsonStr\": {\n        \"id\": \"2\",\n        \"name\": \"Sanjay\",\n        \"email\": \"sanjay@gmail.com\",\n      \t\n    }\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "c91ee8b5-5347-44c6-a38e-ad6cc5df67ea",
+                "name": "UPDATE",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
